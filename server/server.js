@@ -10,13 +10,13 @@ const app = express();
 const port = process.env.PORT || 4000;
 connectDB();
 
-const allowedOrigins = ["https://map-view-frontend.onrender.com"];
+const allowedOrigins = ["https://mapviewer-1.onrender.com"];
 
 app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://map-view-frontend.onrender.com", // Allow only this origin
+    origin: "https://mapviewer-1.onrender.com", // Allow only this origin
     credentials: true, // If you need to send cookies
   })
 );
